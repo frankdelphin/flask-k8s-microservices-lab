@@ -1,0 +1,14 @@
+.mypy_cache/
+__pycache__/
+
+.venv/
+venv/
+
+# Fichiers sensibles (secrets locaux)
+.env
+init.sql
+secrets.yaml
+manifests/configmap.yaml
+manifests/secret.yaml
+
+*.log

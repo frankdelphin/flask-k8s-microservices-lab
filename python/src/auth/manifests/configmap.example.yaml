@@ -1,0 +1,11 @@
+#have to set env variables within our container
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-configmap
+#data contains variable env values that will be automatically exported in the shell when we do deployment
+data:
+  MYSQL_HOST: host.minikube.internal
+  MYSQL_USER: <DB_USER>
+  MySQL_DB: <DB_NAME>
+  MySQL_PORT: "3306"
